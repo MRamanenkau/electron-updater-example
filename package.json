@@ -3,7 +3,7 @@
   "version": "0.4.1",
   "main": "main.js",
   "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "author": "Maks",
   "devDependencies": {
     "electron": "^1.4.15",
     "electron-builder": "^12.3.1"
@@ -23,6 +23,13 @@
     },
     "nsis": {
       "perMachine": true
+    },
+    "build": {
+        "publish": [{
+            "provider": "github",
+            "owner": "MRamanenkau",
+            "repo": "electron-updater-example"
+        }]
     }
   }
 }
